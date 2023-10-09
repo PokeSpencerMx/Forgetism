@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92dfe29917e533544b039f15edec7aa7
+guid: a37a004e1ce4acc4a9ecdabf32d8009c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,43 +103,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GumdumIdleSheet_0
+      name: gumdumIdleMadSheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 200
-        width: 150
-        height: 200
+        y: 384
+        width: 145
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e4ca8268a9d37a45b38343c6a989608
-      internalID: -232241801
+      spriteID: a9f40463addefa94c9bcfad60172543e
+      internalID: -290998668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GumdumIdleSheet_1
+      name: gumdumIdleMadSheet_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 200
-        width: 150
-        height: 200
+        x: 145
+        y: 384
+        width: 145
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70d8fc51d03b35343bd3ef3c216f8dfa
-      internalID: -978038501
+      spriteID: 4fb96d363677f6c458daa89324dc0d1e
+      internalID: 1436694404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GumdumIdleSheet_2
+      name: gumdumIdleMadSheet_2
       rect:
         serializedVersion: 2
-        x: 300
-        y: 200
-        width: 150
-        height: 200
+        x: 290
+        y: 384
+        width: 145
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +166,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c8456795002ded4a9086c4866bbdf8f
-      internalID: -939555043
+      spriteID: e22a3d8d08537da4bb1c6223e78d683f
+      internalID: 111651551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GumdumIdleSheet_3
+      name: gumdumIdleMadSheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 145
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e1e151bc5cf7c44baab5ece97bf7e8
+      internalID: -470092668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gumdumIdleMadSheet_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 192
+        width: 145
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3e1aa5827d4054cb051f9825d7a2c0
+      internalID: 2000541335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gumdumIdleMadSheet_5
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 192
+        width: 145
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c136bd7fa872f204980e2352e9175e7f
+      internalID: 326188261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gumdumIdleMadSheet_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 150
-        height: 200
+        width: 145
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 917cd20852385ec4398453bff702a5c2
-      internalID: 426897832
+      spriteID: 4490711cc2a9a754488a368f50864a7c
+      internalID: -200662327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GumdumIdleSheet_4
+      name: gumdumIdleMadSheet_7
       rect:
         serializedVersion: 2
-        x: 150
+        x: 145
         y: 0
-        width: 150
-        height: 200
+        width: 145
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86713708e3603744f92547e4c6982bf8
-      internalID: 202780929
+      spriteID: c1a29c04f0fa552498d191f88315d26f
+      internalID: 2011536014
       vertices: []
       indices: 
       edges: []
@@ -244,14 +288,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GumdumIdleSheet_0: -232241801
-      GumdumIdleSheet_1: -978038501
-      GumdumIdleSheet_2: -939555043
-      GumdumIdleSheet_3: 426897832
-      GumdumIdleSheet_4: 202780929
-  spritePackingTag: 
+      gumdumIdleMadSheet_0: -290998668
+      gumdumIdleMadSheet_1: 1436694404
+      gumdumIdleMadSheet_2: 111651551
+      gumdumIdleMadSheet_3: -470092668
+      gumdumIdleMadSheet_4: 2000541335
+      gumdumIdleMadSheet_5: 326188261
+      gumdumIdleMadSheet_6: -200662327
+      gumdumIdleMadSheet_7: 2011536014
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
