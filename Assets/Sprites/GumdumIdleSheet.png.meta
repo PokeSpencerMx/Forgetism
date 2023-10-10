@@ -150,117 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream:Assets/GumdumIdleSheet.png.meta
-      spriteID: 8e4ca8268a9d37a45b38343c6a989608
-      internalID: -232241801
-=======
-      spriteID: 46fed1baff7cbc64db00956b62ec64d6
-      internalID: 1662774412
->>>>>>> Stashed changes:Assets/Sprites/GumdumIdleSheet.png.meta
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GumdumIdleSheet_1
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 200
-        width: 150
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-<<<<<<< Updated upstream:Assets/GumdumIdleSheet.png.meta
-      spriteID: 70d8fc51d03b35343bd3ef3c216f8dfa
-      internalID: -978038501
-=======
-      spriteID: ce06fc3e79704a94598036e506507ae2
-      internalID: -1737956014
->>>>>>> Stashed changes:Assets/Sprites/GumdumIdleSheet.png.meta
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GumdumIdleSheet_2
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 200
-        width: 150
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-<<<<<<< Updated upstream:Assets/GumdumIdleSheet.png.meta
-      spriteID: 4c8456795002ded4a9086c4866bbdf8f
-      internalID: -939555043
-=======
-      spriteID: 0730257df570e434797ef96ffbb42bac
-      internalID: 761105691
->>>>>>> Stashed changes:Assets/Sprites/GumdumIdleSheet.png.meta
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GumdumIdleSheet_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 150
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-<<<<<<< Updated upstream:Assets/GumdumIdleSheet.png.meta
-      spriteID: 917cd20852385ec4398453bff702a5c2
-      internalID: 426897832
-=======
-      spriteID: cf515004f80f1ef45b9afdcee346b394
-      internalID: 1516235284
->>>>>>> Stashed changes:Assets/Sprites/GumdumIdleSheet.png.meta
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GumdumIdleSheet_4
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 0
-        width: 150
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-<<<<<<< Updated upstream:Assets/GumdumIdleSheet.png.meta
-      spriteID: 86713708e3603744f92547e4c6982bf8
-      internalID: 202780929
-=======
-      spriteID: 0015fd278f21c14428c8d62c9ed828da
-      internalID: 2090706619
->>>>>>> Stashed changes:Assets/Sprites/GumdumIdleSheet.png.meta
+      spriteID: d4d0c7f06aa3c2eb0800000000000000
+      internalID: -4743351822629204659
       vertices: []
       indices: 
       edges: []
@@ -268,7 +159,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -276,21 +167,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< Updated upstream:Assets/GumdumIdleSheet.png.meta
-      GumdumIdleSheet_0: -232241801
-      GumdumIdleSheet_1: -978038501
-      GumdumIdleSheet_2: -939555043
-      GumdumIdleSheet_3: 426897832
-      GumdumIdleSheet_4: 202780929
-  spritePackingTag: 
-=======
-      GumdumIdleSheet_0: 1662774412
-      GumdumIdleSheet_1: -1737956014
-      GumdumIdleSheet_2: 761105691
-      GumdumIdleSheet_3: 1516235284
-      GumdumIdleSheet_4: 2090706619
+      GumdumIdleSheet_0: -4743351822629204659
   mipmapLimitGroupName: 
->>>>>>> Stashed changes:Assets/Sprites/GumdumIdleSheet.png.meta
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
