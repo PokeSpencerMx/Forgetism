@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ForgetHowMove : MonoBehaviour
 {
+    //public UnityEvent losingLeft;
+    // public Script SideMovement;
+    public delegate void OnLosingLeft();
+    public static OnLosingLeft onLosingLeft;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        // onLosingLeft =
     }
 
     // Update is called once per frame
@@ -23,6 +29,7 @@ public class ForgetHowMove : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 Debug.Log("Forgot how to move left");
+                //losingLeft.Invoke();
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
