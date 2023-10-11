@@ -156,10 +156,94 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: GumdumIdleSheet_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 200
+        width: 150
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25844833750c0704fa75816d7c4064fd
+      internalID: 2102780217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GumdumIdleSheet_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 200
+        width: 150
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e9f31d1e95c6a429ae9a091dd85b2f
+      internalID: 832514273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GumdumIdleSheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887808bb962b1224ea64363bb128bdf5
+      internalID: 1445820380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GumdumIdleSheet_4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef2ac1ff917eeb48bfa146a755186ee
+      internalID: 601785658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 065b329d873f5e943ad9dff7fc115b15
     internalID: 0
     vertices: []
     indices: 
@@ -168,6 +252,10 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       GumdumIdleSheet_0: -4743351822629204659
+      GumdumIdleSheet_1: 2102780217
+      GumdumIdleSheet_2: 832514273
+      GumdumIdleSheet_3: 1445820380
+      GumdumIdleSheet_4: 601785658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
