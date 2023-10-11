@@ -7,6 +7,8 @@ public class SideMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public Transform point;
     private float canMove;
+    private bool gonnaLoseLeft;
+    private bool gonnaLoseRight;
     private bool noLeft;
     private bool noRight;
 
@@ -14,12 +16,28 @@ public class SideMovement : MonoBehaviour
     {
         point.parent = null;
         canMove = 1f;
+        gonnaLoseLeft = false;
+        gonnaLoseRight = false;
         noLeft = false;
         noRight = false;
     }
 
     private void Update()
     {
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                Debug.Log("Forgot how to move left");
+                //losingLeft.Invoke();
+                gonnaLoseLeft = true;
+            }
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                Debug.Log("Forgot how to move right");
+                gonnaLoseRight = true;
+            }
+        }
         transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, point.position) <= .05f)
@@ -41,10 +59,23 @@ public class SideMovement : MonoBehaviour
                 point.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove;
             }
         }
+        if (gonnaLoseLeft)
+        {
+            ForgotLeft();
+        }
+        if (gonnaLoseRight)
+        {
+            ForgotRight();
+        }
     }
 
     public void ForgotLeft()
     {
         noLeft = true;
+    }
+
+    public void ForgotRight()
+    {
+        noRight = true;
     }
 }
