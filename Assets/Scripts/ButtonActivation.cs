@@ -5,6 +5,8 @@ using UnityEngine;
 public class ButtonActivation : MonoBehaviour
 {
     SpriteRenderer s_rend;
+    public GameObject doors_map;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +26,18 @@ public class ButtonActivation : MonoBehaviour
         //Debug.Log("Hello world.");
         s_rend.color = Color.green;
         OpenTheDoor();
+        doors_map.gameObject.SetActive(false);
+        // doors_map.enabled = false;
+        // Destroy(doors_map);
     }
 
     void OnTriggerExit2D()
     {
         s_rend.color = Color.red;
         CloseTheDoor();
+        doors_map.gameObject.SetActive(true);
+        // Instantiate(doors_map);
+        // doors_map.enabled = true;
     }
 
     public void OpenTheDoor()

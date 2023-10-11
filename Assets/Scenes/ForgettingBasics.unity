@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd6057cf28e9ca40b836c23e98f4f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doors_map: {fileID: 1775554273}
 --- !u!4 &767961834 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6775608188059840646, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
