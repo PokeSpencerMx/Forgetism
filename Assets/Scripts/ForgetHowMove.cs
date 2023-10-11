@@ -9,6 +9,7 @@ public class ForgetHowMove : MonoBehaviour
     // public Script SideMovement;
     public delegate void OnLosingLeft();
     public static OnLosingLeft onLosingLeft;
+    public GameObject capsule;
     
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,10 @@ public class ForgetHowMove : MonoBehaviour
             {
                 Debug.Log("Forgot how to move down");
             }
+        }
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Instantiate(capsule);
         }
     }
 }
