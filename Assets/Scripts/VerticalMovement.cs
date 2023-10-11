@@ -34,13 +34,19 @@ public class VerticalMovement : MonoBehaviour
                 Debug.Log("Forgot how to move up");
                 //losingLeft.Invoke();
                 gonnaLoseUp = true;
-                Instantiate(upPrefab, transform.position, transform.rotation);
+                if (noUp == false)
+                {
+                    Instantiate(upPrefab, transform.position, transform.rotation);
+                }
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 Debug.Log("Forgot how to move down");
                 gonnaLoseDown = true;
-                Instantiate(downPrefab, transform.position, transform.rotation);
+                if (noDown == false)
+                {
+                    Instantiate(downPrefab, transform.position, transform.rotation);
+                }
             }
         }
         transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
