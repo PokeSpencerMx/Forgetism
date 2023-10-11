@@ -18,6 +18,7 @@ public class SideMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             newPosition -= new Vector2(gridIncrement, 0);
+            Debug.Log("Left");
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
