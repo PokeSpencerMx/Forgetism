@@ -10,6 +10,7 @@ public class ForgetHowMove : MonoBehaviour
     public delegate void OnLosingLeft();
     public static OnLosingLeft onLosingLeft;
     public GameObject capsule;
+    public bool locked;
     
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,11 @@ public class ForgetHowMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //Debug.Log("Space");
+            
+        }
         if (Input.GetKey(KeyCode.LeftControl))
         {
             //Debug.Log("LeftCtrl is pressed");
