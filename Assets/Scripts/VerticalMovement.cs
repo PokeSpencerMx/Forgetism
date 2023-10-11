@@ -4,35 +4,25 @@ using UnityEngine;
 
 public class VerticalMovement : MonoBehaviour
 {
-    Vector2 newPosition;
-    public float gridIncrement;
+    public float moveSpeed = 5f;
+    public Transform point;
 
-    void Start()
+    private void Start()
     {
-        newPosition = transform.position;
+        point.parent = null;
     }
 
-    void Update()
+    private void Update()
     {
-        // input
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            newPosition -= new Vector2(0, gridIncrement);
-        }
-        else if (Input.GetKeyDown(KeyCode.W))
-        {
-            newPosition += new Vector2(0, gridIncrement);
-        }
+        transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
 
-        // raycast
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, newPosition);
-        if (hit.collider == null)
+        if (Vector3.Distance(transform.position, point.position) <= .05f)
         {
-            transform.position = newPosition;
-        }
-        else
-        {
-            newPosition = transform.position;
+            if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+            {
+                point.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+            }
         }
     }
 }
+
