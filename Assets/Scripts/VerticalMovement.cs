@@ -12,6 +12,9 @@ public class VerticalMovement : MonoBehaviour
     private bool noUp;
     private bool noDown;
 
+    public GameObject upPrefab;
+    public GameObject downPrefab;
+
     private void Start()
     {
         point.parent = null;
@@ -31,11 +34,13 @@ public class VerticalMovement : MonoBehaviour
                 Debug.Log("Forgot how to move up");
                 //losingLeft.Invoke();
                 gonnaLoseUp = true;
+                Instantiate(upPrefab, transform.position, transform.rotation);
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 Debug.Log("Forgot how to move down");
                 gonnaLoseDown = true;
+                Instantiate(downPrefab, transform.position, transform.rotation);
             }
         }
         transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);

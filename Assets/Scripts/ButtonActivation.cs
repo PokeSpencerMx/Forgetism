@@ -23,10 +23,23 @@ public class ButtonActivation : MonoBehaviour
     {
         //Debug.Log("Hello world.");
         s_rend.color = Color.green;
+        OpenTheDoor();
     }
 
     void OnTriggerExit2D()
     {
         s_rend.color = Color.red;
+        CloseTheDoor();
     }
+
+    public void OpenTheDoor()
+    {
+        Debug.Log("Door is open");
+    }
+
+    public void CloseTheDoor()
+    {
+        Debug.Log("Door is closed");
+    }
+
 }

@@ -12,6 +12,9 @@ public class SideMovement : MonoBehaviour
     private bool noLeft;
     private bool noRight;
 
+    public GameObject leftPrefab;
+    public GameObject rightPrefab;
+
     private void Start()
     {
         point.parent = null;
@@ -31,11 +34,13 @@ public class SideMovement : MonoBehaviour
                 Debug.Log("Forgot how to move left");
                 //losingLeft.Invoke();
                 gonnaLoseLeft = true;
+                Instantiate(leftPrefab, transform.position, leftPrefab.transform.rotation);
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 Debug.Log("Forgot how to move right");
                 gonnaLoseRight = true;
+                Instantiate(rightPrefab, transform.position, rightPrefab.transform.rotation);
             }
         }
         transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
