@@ -43,7 +43,7 @@ public class ForgetHowMove : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            Instantiate(capsule);
+            // Instantiate(capsule);
         }
     }
 }
