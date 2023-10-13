@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ForgettingBasics.unity
     guid: b49bf7c63da01eb4299bf329a30eb981
+  - enabled: 1
+    path: Assets/Scenes/SpencerLevel2Idea.unity
+    guid: 9d39dacf553eec64ab27711539f6cc14
   m_configObjects: {}

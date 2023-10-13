@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 109532341321568477}
   - component: {fileID: 2352444966594424731}
   - component: {fileID: 8141413055990258941}
+  - component: {fileID: -1800461502057310}
   m_Layer: 0
   m_Name: Gumdum
   m_TagString: Untagged
@@ -104,6 +105,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   point: {fileID: 5323666704171798726}
+  leftPrefab: {fileID: 0}
+  rightPrefab: {fileID: 0}
 --- !u!114 &3680188681831959634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   point: {fileID: 5323666704171798726}
+  upPrefab: {fileID: 0}
+  downPrefab: {fileID: 0}
 --- !u!61 &109532341321568477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -200,6 +205,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e521747f2c700fe4ab5aea78148f1abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capsule: {fileID: 0}
+  locked: 0
+--- !u!114 &-1800461502057310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4888551219954525238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e94e1623bac87334c85cdd9ee225e0e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5257170106150194737
