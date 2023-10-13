@@ -36,7 +36,7 @@ public class SideMovement : MonoBehaviour
                 gonnaLoseLeft = true;
                 if (noLeft == false)
                 {
-                    Instantiate(leftPrefab, transform.position, leftPrefab.transform.rotation);
+                    Instantiate(leftPrefab, new Vector3(transform.position.x, transform.position.y, leftPrefab.transform.position.z), leftPrefab.transform.rotation);
                 }
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -45,7 +45,7 @@ public class SideMovement : MonoBehaviour
                 gonnaLoseRight = true;
                 if (noRight == false)
                 {
-                    Instantiate(rightPrefab, transform.position, rightPrefab.transform.rotation);
+                    Instantiate(rightPrefab, new Vector3(transform.position.x, transform.position.y, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
                 }
             }
         }

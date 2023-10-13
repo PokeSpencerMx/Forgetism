@@ -36,7 +36,7 @@ public class VerticalMovement : MonoBehaviour
                 gonnaLoseUp = true;
                 if (noUp == false)
                 {
-                    Instantiate(upPrefab, transform.position, transform.rotation);
+                    Instantiate(upPrefab, new Vector3(transform.position.x, transform.position.y, upPrefab.transform.position.z), transform.rotation);
                 }
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -45,7 +45,7 @@ public class VerticalMovement : MonoBehaviour
                 gonnaLoseDown = true;
                 if (noDown == false)
                 {
-                    Instantiate(downPrefab, transform.position, transform.rotation);
+                    Instantiate(downPrefab, new Vector3(transform.position.x, transform.position.y, downPrefab.transform.position.z), transform.rotation);
                 }
             }
         }
