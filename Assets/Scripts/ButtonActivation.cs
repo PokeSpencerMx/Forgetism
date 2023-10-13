@@ -26,28 +26,28 @@ public class ButtonActivation : MonoBehaviour
         //Debug.Log("Hello world.");
         s_rend.color = Color.green;
         OpenTheDoor();
-        doors_map.gameObject.SetActive(false);
-        // doors_map.enabled = false;
-        // Destroy(doors_map);
+        
+        
     }
 
     void OnTriggerExit2D()
     {
         s_rend.color = Color.red;
         CloseTheDoor();
-        doors_map.gameObject.SetActive(true);
-        // Instantiate(doors_map);
-        // doors_map.enabled = true;
+        
+        
     }
 
     public void OpenTheDoor()
     {
         Debug.Log("Door is open");
+        doors_map.gameObject.SetActive(false);
     }
 
     public void CloseTheDoor()
     {
         Debug.Log("Door is closed");
+        doors_map.gameObject.SetActive(true);
     }
 
 }

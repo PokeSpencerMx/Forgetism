@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelChange : MonoBehaviour
 {
@@ -16,8 +17,10 @@ public class LevelChange : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D()
+    void OnTriggerStay2D(Collider2D col)
     {
-        Debug.Log("Change scenes");
+        Debug.Log("Next scene");
+        Debug.Log("GameObject1 collided with " + col.name);
+        SceneManager.LoadScene("SpencerLevel2Idea", LoadSceneMode.Single);
     }
 }
