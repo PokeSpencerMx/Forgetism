@@ -15,6 +15,8 @@ public class VerticalMovement : MonoBehaviour
     public GameObject upPrefab;
     public GameObject downPrefab;
 
+    public LayerMask Stop;
+
     private void Start()
     {
         point.parent = null;
@@ -67,7 +69,8 @@ public class VerticalMovement : MonoBehaviour
                 {
                     canMove = 1;
                 }
-                point.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove;
+                if (!Physics2D.OverlapCircle(point.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove, .2f, Stop))
+                    point.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove;
             }
         }
         if (gonnaLoseUp)
