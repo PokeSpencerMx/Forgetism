@@ -29,6 +29,7 @@ public class SideMovement : MonoBehaviour
 
     private void Update()
     {
+        //forgetting mechanic
         if (Input.GetKey(KeyCode.LeftControl))
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -53,6 +54,7 @@ public class SideMovement : MonoBehaviour
         }
         transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
 
+        //movement
         if (Vector3.Distance(transform.position, point.position) <= .05f)
         {
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
@@ -69,6 +71,7 @@ public class SideMovement : MonoBehaviour
                 {
                     canMove = 1;
                 }
+                //collision check
                 if (!Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
                 {
                     point.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove;
