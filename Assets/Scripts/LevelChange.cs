@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelChange : MonoBehaviour
 {
+    public string nextLevelName;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,6 @@ public class LevelChange : MonoBehaviour
     {
         Debug.Log("Next scene");
         Debug.Log("GameObject1 collided with " + col.name);
-        SceneManager.LoadScene("SpencerLevel2Idea", LoadSceneMode.Single);
+        SceneManager.LoadScene(nextLevelName, LoadSceneMode.Single);
     }
 }
