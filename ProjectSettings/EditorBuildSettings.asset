@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/PlayerMovement.unity
     guid: 0203241f335979a47a5badb23e2814da
   - enabled: 1
+    path: Assets/Scenes/VeryBasicPuzzle.unity
+    guid: 524ffd4eb9fd59c4d88a27212ea78bca
+  - enabled: 1
+    path: Assets/Scenes/NewPuzzle.unity
+    guid: d2a7cef484a281c4cb397ea40c5794c0
+  - enabled: 1
     path: Assets/Scenes/ForgettingBasics.unity
     guid: b49bf7c63da01eb4299bf329a30eb981
   - enabled: 1
