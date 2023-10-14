@@ -29,6 +29,7 @@ public class VerticalMovement : MonoBehaviour
 
     private void Update()
     {
+        //forgetting
         if (Input.GetKey(KeyCode.LeftControl))
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -53,6 +54,7 @@ public class VerticalMovement : MonoBehaviour
         }
         transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
 
+        //movement
         if (Vector3.Distance(transform.position, point.position) <= .05f)
         {
             if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
@@ -69,6 +71,7 @@ public class VerticalMovement : MonoBehaviour
                 {
                     canMove = 1;
                 }
+                //collision check
                 if (!Physics2D.OverlapCircle(point.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove, .2f, Stop))
                     point.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove;
             }
