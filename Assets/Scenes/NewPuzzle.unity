@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 1046777864}
   - component: {fileID: 1046777863}
   - component: {fileID: 1046777862}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,7 +844,7 @@ GameObject:
   - component: {fileID: 1363581053}
   - component: {fileID: 1363581052}
   - component: {fileID: 1363581051}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1612,7 +1612,7 @@ GameObject:
   - component: {fileID: 1456373243}
   - component: {fileID: 1456373242}
   - component: {fileID: 1456373241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3210,7 +3210,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.18056312, y: -0.03282976}
@@ -3461,6 +3461,10 @@ PrefabInstance:
       propertyPath: downPrefab
       value: 
       objectReference: {fileID: 255538594126802573, guid: bb5d42388c9f71b4ca2ccee52e07ee46, type: 3}
+    - target: {fileID: 3680188681831959634, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
+      propertyPath: Stop.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 4888551219954525238, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
       propertyPath: m_Name
       value: Gumdum
@@ -3513,6 +3517,10 @@ PrefabInstance:
       propertyPath: leftPrefab
       value: 
       objectReference: {fileID: 7739884150850237944, guid: 644025e65ff0e4a4da0295767222857d, type: 3}
+    - target: {fileID: 7528315536232715808, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
+      propertyPath: Stop.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7528315536232715808, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
       propertyPath: rightPrefab
       value: 
