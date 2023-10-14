@@ -30,7 +30,7 @@ public class SideMovement : MonoBehaviour
     private void Update()
     {
         //forgetting mechanic
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
