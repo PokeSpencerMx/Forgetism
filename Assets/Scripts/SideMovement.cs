@@ -15,6 +15,8 @@ public class SideMovement : MonoBehaviour
     public GameObject leftPrefab;
     public GameObject rightPrefab;
 
+    public LayerMask Stop;
+
     private void Start()
     {
         point.parent = null;
@@ -67,7 +69,10 @@ public class SideMovement : MonoBehaviour
                 {
                     canMove = 1;
                 }
-                point.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove;
+                if (!Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
+                {
+                    point.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove;
+                }
             }
         }
         if (gonnaLoseLeft)
