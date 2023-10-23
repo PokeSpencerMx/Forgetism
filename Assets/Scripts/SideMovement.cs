@@ -80,7 +80,7 @@ public class SideMovement : MonoBehaviour
                 if (!Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
                 {
                     point.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove;
-                    animator.SetBool("moving", true);
+                    animator.SetTrigger("moves");
                 }
             }
         }

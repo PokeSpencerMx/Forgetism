@@ -15,6 +15,8 @@ public class VerticalMovement : MonoBehaviour
     public GameObject upPrefab;
     public GameObject downPrefab;
 
+    Animator animator;
+    
     public LayerMask Stop;
 
     private void Start()
@@ -25,6 +27,8 @@ public class VerticalMovement : MonoBehaviour
         gonnaLoseDown = false;
         noUp = false;
         noDown = false;
+
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -74,6 +78,7 @@ public class VerticalMovement : MonoBehaviour
                 //collision check
                 if (!Physics2D.OverlapCircle(point.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove, .2f, Stop))
                     point.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove;
+                    animator.SetTrigger("moves");
             }
         }
         if (gonnaLoseUp)
