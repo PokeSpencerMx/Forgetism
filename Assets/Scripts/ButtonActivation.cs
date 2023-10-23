@@ -24,7 +24,7 @@ public class ButtonActivation : MonoBehaviour
     void OnTriggerStay2D()
     {
         //Debug.Log("Hello world.");
-        s_rend.color = Color.green;
+        // s_rend.color = Color.green;
         OpenTheDoor();
         
         
@@ -32,7 +32,7 @@ public class ButtonActivation : MonoBehaviour
 
     void OnTriggerExit2D()
     {
-        s_rend.color = Color.red;
+        // s_rend.color = Color.red;
         CloseTheDoor();
         
         
