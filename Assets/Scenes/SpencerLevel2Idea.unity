@@ -550,7 +550,7 @@ GameObject:
   - component: {fileID: 828783037}
   - component: {fileID: 828783036}
   - component: {fileID: 828783035}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Doors (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -858,7 +858,7 @@ GameObject:
   - component: {fileID: 1363581053}
   - component: {fileID: 1363581052}
   - component: {fileID: 1363581051}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3128,7 +3128,7 @@ GameObject:
   - component: {fileID: 1775554279}
   - component: {fileID: 1775554278}
   - component: {fileID: 1775554277}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3640,7 +3640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6775608188059840646, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.18
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 6775608188059840646, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
       propertyPath: m_LocalPosition.z
