@@ -9,7 +9,7 @@ public class Fan : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
-            rb.velocity = new Vector2(7f, rb.velocity.y);
+            rb.velocity = new Vector2(4f, rb.velocity.y);
         }
     }
 }
