@@ -9,24 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/Scenes/PlayerMovement.unity
+    path: Assets/Scenes/UnusedNTestScenes/PlayerMovement.unity
     guid: 0203241f335979a47a5badb23e2814da
   - enabled: 1
-    path: Assets/Scenes/VeryBasicPuzzle.unity
+    path: Assets/Scenes/CompletedLevels/VeryBasicPuzzle.unity
     guid: 524ffd4eb9fd59c4d88a27212ea78bca
   - enabled: 1
-    path: Assets/Scenes/NewPuzzle.unity
+    path: Assets/Scenes/UnusedNTestScenes/NewPuzzle.unity
     guid: d2a7cef484a281c4cb397ea40c5794c0
   - enabled: 0
-    path: Assets/Scenes/ForgettingBasics.unity
+    path: Assets/Scenes/UnusedNTestScenes/ForgettingBasics.unity
     guid: b49bf7c63da01eb4299bf329a30eb981
   - enabled: 1
-    path: Assets/Scenes/SpencerLevel2Idea.unity
+    path: Assets/Scenes/CompletedLevels/SpencerLevel2Idea.unity
     guid: 9d39dacf553eec64ab27711539f6cc14
   - enabled: 1
-    path: Assets/Scenes/CopyPastedToHelp.unity
+    path: Assets/Scenes/CompletedLevels/CopyPastedToHelp.unity
     guid: 575ecb37983cf7940967e911af9d0090
   - enabled: 1
-    path: Assets/Scenes/NewSecondLevel.unity
+    path: Assets/Scenes/CompletedLevels/NewSecondLevel.unity
     guid: 550bcb86bbf58bd45b1c01f1754310bc
   m_configObjects: {}
