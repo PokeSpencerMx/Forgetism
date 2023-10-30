@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{8258a43b-4582-4c88-af49-6c690a9c2a24}">
+		<property name="name">
+			<value>Forgetism_Error</value>
+		</property>
+		<relationship name="folder">
+			<destination>{16006a54-2d44-41b8-b76d-d994a272cd37}</destination>
+		</relationship>
+	</object>
+</objects>

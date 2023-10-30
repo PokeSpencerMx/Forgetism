@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e3ada16a-a5da-4ec4-b252-92996861b24f}">
+		<property name="assetPath">
+			<value>Forgetism_Error.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.52244897959183678</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{94b76f29-c57e-4ac1-809c-da1ac39f1942}</destination>
+		</relationship>
+	</object>
+</objects>

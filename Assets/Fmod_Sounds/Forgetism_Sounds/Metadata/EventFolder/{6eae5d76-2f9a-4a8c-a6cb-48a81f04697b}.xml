@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{6eae5d76-2f9a-4a8c-a6cb-48a81f04697b}">
+		<property name="name">
+			<value>Forgetism_Gumball_Drop</value>
+		</property>
+		<relationship name="folder">
+			<destination>{16006a54-2d44-41b8-b76d-d994a272cd37}</destination>
+		</relationship>
+	</object>
+</objects>
