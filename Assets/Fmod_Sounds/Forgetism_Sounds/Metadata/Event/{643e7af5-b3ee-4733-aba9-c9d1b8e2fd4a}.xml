@@ -5,7 +5,7 @@
 			<value>Gumball_Drop</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{6eae5d76-2f9a-4a8c-a6cb-48a81f04697b}</destination>
@@ -82,11 +82,7 @@
 			<destination>{2c0b0ee1-0952-45bd-9d7e-98e7dc7d230b}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{ea44b0be-37af-4df6-b0ee-c21b14c788d7}">
-		<relationship name="sounds">
-			<destination>{0636a745-0720-4a6c-a697-16e8dbf5c3ba}</destination>
-		</relationship>
-	</object>
+	<object class="MultiSound" id="{ea44b0be-37af-4df6-b0ee-c21b14c788d7}" />
 	<object class="MixerBusEffectChain" id="{b38f1c1b-0cf5-496c-b007-b5a53dbace95}">
 		<relationship name="effects">
 			<destination>{8bf59346-ab07-491c-86cb-58830bacb348}</destination>
@@ -99,11 +95,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ccfd3126-13e5-439f-872e-c52d1746390a}" />
-	<object class="ProgrammerSound" id="{0636a745-0720-4a6c-a697-16e8dbf5c3ba}">
-		<relationship name="placeholder">
-			<destination>{1b72d2ea-e5e0-4b5e-9791-fc9a33a24752}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusFader" id="{8bf59346-ab07-491c-86cb-58830bacb348}" />
 	<object class="MixerBusFader" id="{25efd8bd-21f7-4d7c-ad83-29c17c7c5e85}" />
 </objects>
