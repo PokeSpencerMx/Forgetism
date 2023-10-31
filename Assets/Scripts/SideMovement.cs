@@ -35,25 +35,28 @@ public class SideMovement : MonoBehaviour
     private void Update()
     {
         //forgetting mechanic
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Vector3.Distance(transform.position, point.position) <=.05f && !Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
-                Debug.Log("Forgot how to move left");
-                //losingLeft.Invoke();
-                gonnaLoseLeft = true;
-                if (noLeft == false)
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
-                    Instantiate(leftPrefab, new Vector3(transform.position.x, transform.position.y, leftPrefab.transform.position.z), leftPrefab.transform.rotation);
+                    Debug.Log("Forgot how to move left");
+                    //losingLeft.Invoke();
+                    gonnaLoseLeft = true;
+                    if (noLeft == false)
+                    {
+                        Instantiate(leftPrefab, new Vector3(transform.position.x, transform.position.y, leftPrefab.transform.position.z), leftPrefab.transform.rotation);
+                    }
                 }
-            }
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                Debug.Log("Forgot how to move right");
-                gonnaLoseRight = true;
-                if (noRight == false)
+                if (Input.GetKeyDown(KeyCode.RightArrow))
                 {
-                    Instantiate(rightPrefab, new Vector3(transform.position.x, transform.position.y, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
+                    Debug.Log("Forgot how to move right");
+                    gonnaLoseRight = true;
+                    if (noRight == false)
+                    {
+                        Instantiate(rightPrefab, new Vector3(transform.position.x, transform.position.y, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
+                    }
                 }
             }
         }

@@ -34,28 +34,32 @@ public class VerticalMovement : MonoBehaviour
     private void Update()
     {
         //forgetting
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Vector3.Distance(transform.position, point.position) <=.05f && !Physics2D.OverlapCircle(point.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove, .2f, Stop))
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
-                Debug.Log("Forgot how to move up");
-                //losingLeft.Invoke();
-                gonnaLoseUp = true;
-                if (noUp == false)
+                if (Input.GetKeyDown(KeyCode.UpArrow))
                 {
-                    Instantiate(upPrefab, new Vector3(transform.position.x, transform.position.y, upPrefab.transform.position.z), transform.rotation);
+                    Debug.Log("Forgot how to move up");
+                    //losingLeft.Invoke();
+                    gonnaLoseUp = true;
+                    if (noUp == false)
+                    {
+                        Instantiate(upPrefab, new Vector3(transform.position.x, transform.position.y, upPrefab.transform.position.z), transform.rotation);
+                    }
                 }
-            }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                Debug.Log("Forgot how to move down");
-                gonnaLoseDown = true;
-                if (noDown == false)
+                if (Input.GetKeyDown(KeyCode.DownArrow))
                 {
-                    Instantiate(downPrefab, new Vector3(transform.position.x, transform.position.y, downPrefab.transform.position.z), transform.rotation);
+                    Debug.Log("Forgot how to move down");
+                    gonnaLoseDown = true;
+                    if (noDown == false)
+                    {
+                        Instantiate(downPrefab, new Vector3(transform.position.x, transform.position.y, downPrefab.transform.position.z), transform.rotation);
+                    }
                 }
             }
         }
+        
         transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
 
         //movement
