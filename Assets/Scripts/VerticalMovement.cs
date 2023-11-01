@@ -104,5 +104,27 @@ public class VerticalMovement : MonoBehaviour
     {
         noDown = true;
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        // Debug.Log("GameObject1 collided with " + col.name);
+        // if(col.name == "UpTriangle(Clone)")
+        // {
+        //     // noUp = false;
+        //     // gonnaLoseUp = false;
+        //     Destroy(col);
+        // }
+        // if (Vector3.Distance(transform.position, point.position) <=.05f && !Physics2D.OverlapCircle(point.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove, .2f, Stop))
+        // {
+        //     if(col.name == "UpTriangle(Clone)")
+        //     {
+        //         noUp = false;
+        //         gonnaLoseUp = false;
+        //         // Destroy(col);
+        //     }
+        // }
+        // restart = true;
+        // timer = 0.0f;
+    }
 }
 
