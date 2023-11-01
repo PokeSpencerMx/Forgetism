@@ -87,6 +87,10 @@ public class SideMovement : MonoBehaviour
                 }
             }
         }
+        // else
+        // {
+        //     Debug.Log("Hey no!");
+        // }
         if (gonnaLoseLeft)
         {
             ForgotLeft();
