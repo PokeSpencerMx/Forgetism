@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CompletedLevels/HeyWaitAMinute.unity
     guid: 709ad677026f37d4db2dd11c2d4d637a
+  - enabled: 1
+    path: Assets/Scenes/CompletedLevels/PickYourPosition.unity
+    guid: ad697ac90a3014f4a81059886821f4b0
   m_configObjects: {}
