@@ -3435,7 +3435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9137539e69e00064aa46d23699643d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelName: VeryBasicPuzzle
+  nextLevelName: AllFourGone
 --- !u!4 &2027806614
 Transform:
   m_ObjectHideFlags: 0
