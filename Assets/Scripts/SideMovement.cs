@@ -35,7 +35,7 @@ public class SideMovement : MonoBehaviour
     private void Update()
     {
         //forgetting mechanic
-        if (Vector3.Distance(transform.position, point.position) <=.05f && !Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
+        if (Vector3.Distance(transform.position, point.position) <= .05f && !Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
@@ -47,66 +47,71 @@ public class SideMovement : MonoBehaviour
                     if (noLeft == false)
                     {
                         Instantiate(leftPrefab, new Vector3(transform.position.x, transform.position.y, leftPrefab.transform.position.z), leftPrefab.transform.rotation);
-                    }
-                }
-                if (Input.GetKeyDown(KeyCode.RightArrow))
-                {
-                    Debug.Log("Forgot how to move right");
-                    gonnaLoseRight = true;
-                    if (noRight == false)
-                    {
-                        Instantiate(rightPrefab, new Vector3(transform.position.x, transform.position.y, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
-                    }
-                }
-            }
-        }
-        transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
 
-        //movement
-        if (Vector3.Distance(transform.position, point.position) <= .05f)
-        {
-            if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
-            {
-                if (Input.GetAxisRaw("Horizontal") < 0 && noLeft)
-                {
-                    canMove = 0;
-                }
-                else if (Input.GetAxisRaw("Horizontal") > 0 && noRight)
-                {
-                    canMove = 0;
-                }
-                else
-                {
-                    canMove = 1;
-                }
-                //collision check
-                if (!Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
-                {
-                    point.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove;
-                    animator.SetTrigger("moves");
+                    }
+                    if (Input.GetKeyDown(KeyCode.RightArrow))
+                    {
+                        Debug.Log("Forgot how to move right");
+                        gonnaLoseRight = true;
+                        if (noRight == false)
+                        {
+                            Instantiate(rightPrefab, new Vector3(transform.position.x, transform.position.y, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
+                        }
+                    }
                 }
             }
-        }
-        // else
-        // {
-        //     Debug.Log("Hey no!");
-        // }
-        if (gonnaLoseLeft)
-        {
-            ForgotLeft();
-        }
-        if (gonnaLoseRight)
-        {
-            ForgotRight();
+            transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
+
+            //movement
+            if (Vector3.Distance(transform.position, point.position) <= .05f)
+            {
+                if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
+                {
+                    if (Input.GetAxisRaw("Horizontal") < 0 && noLeft)
+                    {
+                        canMove = 0;
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Error/Error");
+                    }
+                    else if (Input.GetAxisRaw("Horizontal") > 0 && noRight)
+                    {
+                        canMove = 0;
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Error/Error");
+                    }
+                    else
+                    {
+                        canMove = 1;
+                    }
+                    //collision check
+                    if (!Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
+                    {
+                        point.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove;
+                        animator.SetTrigger("moves");
+                    }
+                }
+            }
+            // else
+            // {
+            //     Debug.Log("Hey no!");
+            // }
+            if (gonnaLoseLeft)
+            {
+                ForgotLeft();
+            }
+            if (gonnaLoseRight)
+            {
+                ForgotRight();
+            }
         }
     }
 
-    public void ForgotLeft()
+    private void ForgotLeft()
     {
         noLeft = true;
     }
 
-    public void ForgotRight()
+    private void ForgotRight()
     {
         noRight = true;
     }

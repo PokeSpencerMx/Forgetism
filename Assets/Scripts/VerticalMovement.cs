@@ -46,6 +46,7 @@ public class VerticalMovement : MonoBehaviour
                     if (noUp == false)
                     {
                         Instantiate(upPrefab, new Vector3(transform.position.x, transform.position.y, upPrefab.transform.position.z), transform.rotation);
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
                     }
                 }
                 if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -55,6 +56,7 @@ public class VerticalMovement : MonoBehaviour
                     if (noDown == false)
                     {
                         Instantiate(downPrefab, new Vector3(transform.position.x, transform.position.y, downPrefab.transform.position.z), transform.rotation);
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
                     }
                 }
             }
@@ -70,10 +72,12 @@ public class VerticalMovement : MonoBehaviour
                 if (Input.GetAxisRaw("Vertical") < 0 && noDown)
                 {
                     canMove = 0;
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Error/Error");
                 }
                 else if (Input.GetAxisRaw("Vertical") > 0 && noUp)
                 {
                     canMove = 0;
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Error/Error");
                 }
                 else
                 {

@@ -1039,6 +1039,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3680188681831959634, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
+      propertyPath: upPrefab
+      value: 
+      objectReference: {fileID: 8479637508910894968, guid: 5dbec24315db544c383d37812a9ce51d, type: 3}
+    - target: {fileID: 3680188681831959634, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
+      propertyPath: downPrefab
+      value: 
+      objectReference: {fileID: 1857419532351419737, guid: d4b6f281462e6450a928ea73684f0753, type: 3}
     - target: {fileID: 4888551219954525238, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
       propertyPath: m_Name
       value: Gumdum
@@ -1091,6 +1099,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7528315536232715808, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
+      propertyPath: leftPrefab
+      value: 
+      objectReference: {fileID: 9036512058342020287, guid: a7e3344c4bc0849edb7d1c3300a32e9e, type: 3}
+    - target: {fileID: 7528315536232715808, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
+      propertyPath: rightPrefab
+      value: 
+      objectReference: {fileID: 6570608043273988608, guid: 65bb16c35499b4f27a43f126459ade50, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
