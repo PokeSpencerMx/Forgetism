@@ -13,7 +13,7 @@ public class Fan : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, Mathf.Infinity, GumdumLayer);
 
-        // if we hit gumdum
+     /*   // if we hit gumdum
         if (hit.collider != null)
         {
             // only set gumdum var when stopped
@@ -27,7 +27,7 @@ public class Fan : MonoBehaviour
         else
         {
             gumdum = null;
-        }
+        }*/
 
         // if gumdum is set, that means fan is on
         if (gumdum != null)

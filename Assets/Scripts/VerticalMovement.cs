@@ -32,11 +32,11 @@ public class VerticalMovement : MonoBehaviour
 
         animator = GetComponent<Animator>();
     }
-    public bool IsMoving()
+   /* public bool IsMoving()
     {
         return (transform.position != point.position);
     }
-
+   */
     private void Update()
     {
         //forgetting
@@ -96,7 +96,7 @@ public class VerticalMovement : MonoBehaviour
             }
         }
         // auto movement
-        if (Input.GetAxisRaw("Vertical") == -1)
+       /* if (Input.GetAxisRaw("Vertical") == -1)
         {
             Debug.Log("FAN ON");
             fanOn = true;
@@ -118,6 +118,7 @@ public class VerticalMovement : MonoBehaviour
         {
             point.position = fanCheck;
         }
+       */
         if (gonnaLoseUp)
         {
             ForgotUp();

@@ -33,10 +33,10 @@ public class SideMovement : MonoBehaviour
 
         animator = GetComponent<Animator>();
     }
-    public bool IsMoving()
+  /*  public bool IsMoving()
     {
         return (transform.position != point.position);
-    }
+    }*/
 
     private void Update()
     {
@@ -98,7 +98,7 @@ public class SideMovement : MonoBehaviour
                 }
             }
             // auto movement
-           /* if (Input.GetAxisRaw("Horizontal") == -1)
+            /*if (Input.GetAxisRaw("Horizontal") == -1)
             {
                 Debug.Log("FAN ON");
                 fanOn = true;
