@@ -4,12 +4,36 @@ using UnityEngine;
 
 public class Fan : MonoBehaviour
 {
-    private void OnTriggerStay2D(Collider2D collision)
+    public LayerMask GumdumLayer;
+    Vector2 stopPosition;
+    GameObject gumdum;
+
+    // Update is called once per frame
+    void Update()
     {
-        if (collision.gameObject.tag == "Player")
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, Mathf.Infinity, GumdumLayer);
+
+        // if we hit gumdum
+        if (hit.collider != null)
         {
-            Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
-            rb.velocity = new Vector2(4f, rb.velocity.y);
+            // only set gumdum var when stopped
+            GameObject hitObject = hit.collider.gameObject;
+            if (!hitObject.GetComponent<VerticalMovement>().IsMoving() && !hitObject.GetComponent<SideMovement>().IsMoving())
+            {
+                Debug.Log(hit.collider.gameObject);
+                gumdum = hit.collider.gameObject;
+            }
         }
+        else
+        {
+            gumdum = null;
+        }
+
+        // if gumdum is set, that means fan is on
+        if (gumdum != null)
+        {
+            //gumdum.GetComponent<Rigidbody2D>().velocity = transform.right * 10f;
+        }
+
     }
 }

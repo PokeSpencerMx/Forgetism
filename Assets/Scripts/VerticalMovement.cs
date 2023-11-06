@@ -18,6 +18,8 @@ public class VerticalMovement : MonoBehaviour
     Animator animator;
     
     public LayerMask Stop;
+    Vector3 fanCheck;
+    bool fanOn = false;
 
     private void Start()
     {
@@ -29,6 +31,10 @@ public class VerticalMovement : MonoBehaviour
         noDown = false;
 
         animator = GetComponent<Animator>();
+    }
+    public bool IsMoving()
+    {
+        return (transform.position != point.position);
     }
 
     private void Update()
@@ -88,6 +94,29 @@ public class VerticalMovement : MonoBehaviour
                     point.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove;
                     animator.SetTrigger("moves");
             }
+        }
+        // auto movement
+        if (Input.GetAxisRaw("Vertical") == -1)
+        {
+            Debug.Log("FAN ON");
+            fanOn = true;
+
+            float d = 0.5f;
+            Vector3 start = point.position - new Vector3(0, d, 0);
+            Vector3 end = point.position + new Vector3(0, d, 0);
+            if (!Physics2D.Linecast(start, end, Stop))
+            {
+                fanCheck = point.position + new Vector3(0f, -1f, 0f);
+                Debug.Log("fanCheck:" + fanCheck);
+            }
+            else
+            {
+                fanOn = false;
+            }
+        }
+        if (fanOn)
+        {
+            point.position = fanCheck;
         }
         if (gonnaLoseUp)
         {
