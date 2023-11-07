@@ -3277,6 +3277,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6249989803400558500, guid: 88c7fc46473c02b488dffbf03fd0fea9, type: 3}
     - target: {fileID: 3680188681831959634, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680188681831959634, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
       propertyPath: downPrefab
       value: 
       objectReference: {fileID: 255538594126802573, guid: bb5d42388c9f71b4ca2ccee52e07ee46, type: 3}
@@ -3327,6 +3331,10 @@ PrefabInstance:
     - target: {fileID: 6775608188059840646, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528315536232715808, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
+      propertyPath: moveSpeed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7528315536232715808, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
       propertyPath: leftPrefab
