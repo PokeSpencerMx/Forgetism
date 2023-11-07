@@ -25,4 +25,10 @@ public class LevelChange : MonoBehaviour
         Debug.Log("GameObject1 collided with " + col.name);
         SceneManager.LoadScene(nextLevelName, LoadSceneMode.Single);
     }
+
+    public void LevelSelect()
+    {
+        Debug.Log(nextLevelName);
+        SceneManager.LoadScene(nextLevelName, LoadSceneMode.Single);
+    }
 }
