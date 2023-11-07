@@ -48,11 +48,13 @@ public class SideMovement : MonoBehaviour
                     gonnaLoseLeft = true;
                     if (noLeft == false)
                     {
-                        Instantiate(leftPrefab, new Vector3(transform.position.x, transform.position.y, leftPrefab.transform.position.z), leftPrefab.transform.rotation);
+                        Instantiate(leftPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, leftPrefab.transform.position.z), leftPrefab.transform.rotation);
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
 
                     }
-                    if (Input.GetKeyDown(KeyCode.RightArrow))
+                    
+                }
+                if (Input.GetKeyDown(KeyCode.RightArrow))
                     {
                         Debug.Log("Forgot how to move right");
                         gonnaLoseRight = true;
@@ -62,7 +64,6 @@ public class SideMovement : MonoBehaviour
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
                         }
                     }
-                }
             }
             transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
 
