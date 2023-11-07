@@ -19,8 +19,7 @@ public class SideMovement : MonoBehaviour
     Animator animator;
 
     public LayerMask Stop;
-    Vector3 fanCheck;
-    bool fanOn = false;
+  
 
     private void Start()
     {
@@ -33,10 +32,7 @@ public class SideMovement : MonoBehaviour
 
         animator = GetComponent<Animator>();
     }
-  /*  public bool IsMoving()
-    {
-        return (transform.position != point.position);
-    }*/
+  
 
     private void Update()
     {
@@ -97,30 +93,7 @@ public class SideMovement : MonoBehaviour
                     }
                 }
             }
-            // auto movement
-            /*if (Input.GetAxisRaw("Horizontal") == -1)
-            {
-                Debug.Log("FAN ON");
-                fanOn = true;
-
-                float d = 0.5f;
-                Vector3 start = point.position - new Vector3(d, 0, 0);
-                Vector3 end = point.position + new Vector3(d, 0, 0);
-                if (!Physics2D.Linecast(start, end, Stop))
-                {
-                    fanCheck = point.position + new Vector3(-1f, 0f, 0f);
-                    Debug.Log("fanCheck:" + fanCheck);
-                }
-                else
-                {
-                    fanOn = false;
-                }
-            }
-            if (fanOn)
-            {
-                point.position = fanCheck;
-            }
-           */
+            
             // else
             // {
             //     Debug.Log("Hey no!");
