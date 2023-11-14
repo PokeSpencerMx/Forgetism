@@ -39,9 +39,11 @@ public class VerticalMovement : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                if (Input.GetKeyDown(KeyCode.UpArrow))
+                if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
                 {
                     Debug.Log("Forgot how to move up");
+                    //Animation for forgetting up should go here.
+
                     //losingLeft.Invoke();
                     gonnaLoseUp = true;
                     if (noUp == false)
@@ -50,9 +52,12 @@ public class VerticalMovement : MonoBehaviour
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
                     }
                 }
-                if (Input.GetKeyDown(KeyCode.DownArrow))
+                if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
                 {
-                    Debug.Log("Forgot how to move down");
+                    // Debug.Log("Forgot how to move down");
+
+                    //Animation for forgetting down should go here.
+
                     gonnaLoseDown = true;
                     if (noDown == false)
                     {

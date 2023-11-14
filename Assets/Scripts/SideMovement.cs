@@ -41,9 +41,15 @@ public class SideMovement : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                //Animation for getting ready to forget a direction
+
+
+                if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
                 {
-                    Debug.Log("Forgot how to move left");
+                    // Debug.Log("Forgot how to move left");
+                    
+                    //Animation for forgetting left should go here.
+
                     //losingLeft.Invoke();
                     gonnaLoseLeft = true;
                     if (noLeft == false)
@@ -54,9 +60,11 @@ public class SideMovement : MonoBehaviour
                     }
                     
                 }
-                if (Input.GetKeyDown(KeyCode.RightArrow))
+                if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                     {
-                        Debug.Log("Forgot how to move right");
+                        // Debug.Log("Forgot how to move right");
+                        //Animation for forgetting right should go here.
+
                         gonnaLoseRight = true;
                         if (noRight == false)
                         {
