@@ -48,7 +48,7 @@ public class VerticalMovement : MonoBehaviour
                     gonnaLoseUp = true;
                     if (noUp == false)
                     {
-                        Instantiate(upPrefab, new Vector3(transform.position.x, transform.position.y, upPrefab.transform.position.z), transform.rotation);
+                        Instantiate(upPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, upPrefab.transform.position.z), transform.rotation);
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
                     }
                 }
@@ -61,7 +61,7 @@ public class VerticalMovement : MonoBehaviour
                     gonnaLoseDown = true;
                     if (noDown == false)
                     {
-                        Instantiate(downPrefab, new Vector3(transform.position.x, transform.position.y, downPrefab.transform.position.z), transform.rotation);
+                        Instantiate(downPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, downPrefab.transform.position.z), transform.rotation);
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
                     }
                 }

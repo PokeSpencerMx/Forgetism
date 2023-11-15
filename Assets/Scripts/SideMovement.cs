@@ -77,7 +77,7 @@ public class SideMovement : MonoBehaviour
                     gonnaLoseRight = true;
                         if (noRight == false)
                         {
-                            Instantiate(rightPrefab, new Vector3(transform.position.x, transform.position.y, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
+                            Instantiate(rightPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
                            // animator.SetBool("unmovable", false);
                            // animator.SetBool("right", false);

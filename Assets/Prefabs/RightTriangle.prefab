@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7552923315956454654}
   - component: {fileID: 4055548729279320496}
   - component: {fileID: 5750468822495458636}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightTriangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1721361813, guid: 6f8db6385e3654b03a7b9e5725cd697e, type: 3}
+  m_Sprite: {fileID: 1283959252, guid: f5c896d4428a8814f83f8e6844851261, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -145,7 +145,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13714267, y: -0.010871744}
+  m_Offset: {x: -0.03902936, y: -0.006861627}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -156,5 +156,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.015143067, y: 0.025614541}
+  m_Size: {x: 0.0726835, y: 0.033645123}
   m_EdgeRadius: 0
