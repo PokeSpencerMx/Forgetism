@@ -27,7 +27,8 @@ public class ButtonActivation : MonoBehaviour
         // s_rend.color = Color.green;
         OpenTheDoor();
         
-        
+
+
     }
 
     void OnTriggerExit2D()
@@ -42,12 +43,14 @@ public class ButtonActivation : MonoBehaviour
     {
         Debug.Log("Door is open");
         doors_map.gameObject.SetActive(false);
+        
     }
 
     public void CloseTheDoor()
     {
         Debug.Log("Door is closed");
         doors_map.gameObject.SetActive(true);
+
     }
 
 }
