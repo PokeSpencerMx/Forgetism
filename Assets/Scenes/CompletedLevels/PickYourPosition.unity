@@ -455,6 +455,7 @@ GameObject:
   - component: {fileID: 802605983}
   - component: {fileID: 802605982}
   - component: {fileID: 802605981}
+  - component: {fileID: 802605984}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -536,6 +537,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &802605984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802605980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LoadEvent: 1
+  UnloadEvent: 0
+  Banks:
+  - Door
+  - Drop
+  - Error
+  CollisionTag: 
+  PreloadSamples: 1
 --- !u!1 &828783033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,7 +1473,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 14
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1602,7 +1623,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 20
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1789,20 +1810,20 @@ Tilemap:
     m_Data: {fileID: -1123968249, guid: e276844408b361443b19a32e0432e961, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 1184118585, guid: 536cc436797192548b94438bb014ac54, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -923603480, guid: e276844408b361443b19a32e0432e961, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 18
     m_Data: {fileID: -977165365, guid: 6cf2a4600589b434ab858112b1de6fa0, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 572120949, guid: 536cc436797192548b94438bb014ac54, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1296115664, guid: 6cf2a4600589b434ab858112b1de6fa0, type: 3}
+    m_Data: {fileID: -923603480, guid: e276844408b361443b19a32e0432e961, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 244368370, guid: e276844408b361443b19a32e0432e961, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 358249012, guid: e276844408b361443b19a32e0432e961, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1296115664, guid: 6cf2a4600589b434ab858112b1de6fa0, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 332438461, guid: e276844408b361443b19a32e0432e961, type: 3}
   - m_RefCount: 1
