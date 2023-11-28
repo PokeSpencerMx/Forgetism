@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8141413055990258941}
   - component: {fileID: -1800461502057310}
   - component: {fileID: 156558584048242593}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gumdum
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -113,6 +113,7 @@ MonoBehaviour:
   point: {fileID: 5323666704171798726}
   leftPrefab: {fileID: 9036512058342020287, guid: a7e3344c4bc0849edb7d1c3300a32e9e, type: 3}
   rightPrefab: {fileID: 6570608043273988608, guid: 65bb16c35499b4f27a43f126459ade50, type: 3}
+  isMove: 0
   Stop:
     serializedVersion: 2
     m_Bits: 64
@@ -132,6 +133,7 @@ MonoBehaviour:
   point: {fileID: 5323666704171798726}
   upPrefab: {fileID: 8479637508910894968, guid: 5dbec24315db544c383d37812a9ce51d, type: 3}
   downPrefab: {fileID: 1857419532351419737, guid: d4b6f281462e6450a928ea73684f0753, type: 3}
+  isMove: 0
   Stop:
     serializedVersion: 2
     m_Bits: 64
@@ -167,7 +169,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014541715, y: -0.26}
+  m_Offset: {x: 0, y: -0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -178,7 +180,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.62571734, y: 0.66589415}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!50 &2352444966594424731
 Rigidbody2D:
@@ -263,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5323666704171798726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,6 +298,10 @@ PrefabInstance:
     - target: {fileID: 7022062179269694354, guid: 6e2309b1b38cfaf438269e8e2a055ec2, type: 3}
       propertyPath: m_Name
       value: Capsule
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022062179269694354, guid: 6e2309b1b38cfaf438269e8e2a055ec2, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7022062179269694354, guid: 6e2309b1b38cfaf438269e8e2a055ec2, type: 3}
       propertyPath: m_IsActive
@@ -384,6 +390,10 @@ PrefabInstance:
       value: RightTriangle
       objectReference: {fileID: 0}
     - target: {fileID: 1283539731622305691, guid: 9d6bf0dcf7347834cbeda34a195bbd3f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283539731622305691, guid: 9d6bf0dcf7347834cbeda34a195bbd3f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -461,6 +471,10 @@ PrefabInstance:
     - target: {fileID: 255538594126802573, guid: bb5d42388c9f71b4ca2ccee52e07ee46, type: 3}
       propertyPath: m_Name
       value: DownTriangle
+      objectReference: {fileID: 0}
+    - target: {fileID: 255538594126802573, guid: bb5d42388c9f71b4ca2ccee52e07ee46, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 255538594126802573, guid: bb5d42388c9f71b4ca2ccee52e07ee46, type: 3}
       propertyPath: m_IsActive
@@ -613,6 +627,10 @@ PrefabInstance:
       value: UpTriangle
       objectReference: {fileID: 0}
     - target: {fileID: 6249989803400558500, guid: 88c7fc46473c02b488dffbf03fd0fea9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6249989803400558500, guid: 88c7fc46473c02b488dffbf03fd0fea9, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -689,6 +707,10 @@ PrefabInstance:
     - target: {fileID: 7739884150850237944, guid: 644025e65ff0e4a4da0295767222857d, type: 3}
       propertyPath: m_Name
       value: LeftTriangle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7739884150850237944, guid: 644025e65ff0e4a4da0295767222857d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7739884150850237944, guid: 644025e65ff0e4a4da0295767222857d, type: 3}
       propertyPath: m_IsActive

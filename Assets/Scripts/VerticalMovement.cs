@@ -14,6 +14,7 @@ public class VerticalMovement : MonoBehaviour
 
     public GameObject upPrefab;
     public GameObject downPrefab;
+    private bool isMove;
 
     Animator animator;
     
@@ -31,11 +32,21 @@ public class VerticalMovement : MonoBehaviour
 
         animator = GetComponent<Animator>();
     }
-  
+    public bool IsMoving()
+    {
+        isMove = transform.position != point.position;
+        return isMove;
+    }
+
+    public void ResetPosition()
+    {
+        point.position = transform.position;
+    }
+
     private void Update()
     {
         //forgetting
-        if (Vector3.Distance(transform.position, point.position) <=.05f && !Physics2D.OverlapCircle(point.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove, .2f, Stop))
+        if (transform.position == point.position && !Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Vertical"), 0f, 0f) * canMove, .2f, Stop))
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {

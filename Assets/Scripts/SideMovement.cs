@@ -17,6 +17,7 @@ public class SideMovement : MonoBehaviour
 
     private SpriteRenderer sRend;
     Animator animator;
+    private bool isMove;
 
     public LayerMask Stop;
   
@@ -32,12 +33,22 @@ public class SideMovement : MonoBehaviour
 
         animator = GetComponent<Animator>();
     }
-  
+    public bool IsMoving()
+    {
+        isMove = transform.position != point.position;
+        return isMove;
+    }
+
+    public void ResetPosition()
+    {
+        point.position = transform.position;
+    }
+
 
     private void Update()
     {
         //forgetting mechanic
-        if (Vector3.Distance(transform.position, point.position) <= .05f && !Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
+        if (transform.position == point.position && !Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
