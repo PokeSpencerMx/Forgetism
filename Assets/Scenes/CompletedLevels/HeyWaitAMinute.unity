@@ -3186,7 +3186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9137539e69e00064aa46d23699643d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelName: WrongWay
+  nextLevelName: LevelSelect
 --- !u!4 &1706907035
 Transform:
   m_ObjectHideFlags: 0
