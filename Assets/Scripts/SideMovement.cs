@@ -15,7 +15,7 @@ public class SideMovement : MonoBehaviour
     public GameObject leftPrefab;
     public GameObject rightPrefab;
 
-    private SpriteRenderer sRend;
+    private SpriteRenderer sr;
     Animator animator;
     private bool isMove;
 
@@ -32,6 +32,7 @@ public class SideMovement : MonoBehaviour
         noRight = false;
 
         animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
     }
     public bool IsMoving()
     {
@@ -47,6 +48,17 @@ public class SideMovement : MonoBehaviour
 
     private void Update()
     {
+        //sprite flipping
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        {
+            sr.flipX = true;
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        {
+            sr.flipX = false;
+        }
+        
+
         //forgetting mechanic
         if (transform.position == point.position && !Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * canMove, .2f, Stop))
         {

@@ -46,7 +46,7 @@ public class VerticalMovement : MonoBehaviour
     private void Update()
     {
         //forgetting
-        if (transform.position == point.position && !Physics2D.OverlapCircle(point.position + new Vector3(Input.GetAxisRaw("Vertical"), 0f, 0f) * canMove, .2f, Stop))
+        if (transform.position == point.position && !Physics2D.OverlapCircle(point.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * canMove, .2f, Stop))
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {

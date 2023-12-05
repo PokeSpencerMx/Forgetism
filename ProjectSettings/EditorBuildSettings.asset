@@ -48,7 +48,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Unfinished Levels/PickYourPosition.unity
     guid: ad697ac90a3014f4a81059886821f4b0
   - enabled: 1
-    path: Assets/Scenes/CompletedLevels/AllFourGone.unity
+    path: Assets/Scenes/Unfinished Levels/AllFourGone.unity
     guid: af530f6fdcc6bec468f9142c1835493f
   - enabled: 1
     path: Assets/Scenes/CompletedLevels/WrongWay.unity
