@@ -51,9 +51,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Unfinished Levels/AllFourGone.unity
     guid: af530f6fdcc6bec468f9142c1835493f
   - enabled: 1
+    path: Assets/Scenes/CompletedLevels/Tumble3ginnings.unity
+    guid: e62f66350875e0e45b19b4877391ce07
+  - enabled: 1
     path: Assets/Scenes/CompletedLevels/WrongWay.unity
     guid: 9661574d7fefd8c458e4bb89d6f90993
   - enabled: 1
-    path: Assets/Scenes/CompletedLevels/Tumble3ginnings.unity
-    guid: e62f66350875e0e45b19b4877391ce07
+    path: Assets/Scenes/Unfinished Levels/APushInTheRightDirection.unity
+    guid: 3abca14c25e7d3645b993d9ca462ab25
   m_configObjects: {}
