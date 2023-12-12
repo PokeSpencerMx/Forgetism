@@ -894,7 +894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363581046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -0.04, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1795,8 +1795,8 @@ Tilemap:
   - first: {x: 2, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 20
-      m_TileSpriteIndex: 14
+      m_TileIndex: 17
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1805,8 +1805,8 @@ Tilemap:
   - first: {x: 3, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 18
-      m_TileSpriteIndex: 16
+      m_TileIndex: 17
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1815,8 +1815,8 @@ Tilemap:
   - first: {x: 4, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 20
-      m_TileSpriteIndex: 14
+      m_TileIndex: 17
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1915,8 +1915,8 @@ Tilemap:
   - first: {x: -4, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileIndex: 13
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1935,8 +1935,8 @@ Tilemap:
   - first: {x: -2, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileIndex: 14
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1975,8 +1975,8 @@ Tilemap:
   - first: {x: 2, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 18
-      m_TileSpriteIndex: 16
+      m_TileIndex: 17
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2095,8 +2095,8 @@ Tilemap:
   - first: {x: -1, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileIndex: 10
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2234,27 +2234,27 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 410bb3842c7e92242b6e9bb9fc7efe89, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b4c81d9074056374d9467b10a25fd2c1, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: d5f7e301cc9610445a5448630eab3c80, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: fa7da6f55b1b2bc4ca380a3254f7bc9e, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: c154d2db6d39d3e429f6280723eb85fd, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: ec94f7569c73fcf43bad240e91862b5c, type: 2}
   - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: 5e390914053a8274597ab521378f7027, type: 2}
+  - m_RefCount: 5
+    m_Data: {fileID: 11400000, guid: 2efb84dd682a3f242b1af99e98682b2a, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: a8dc001de67a8c644adc31dde02571fb, type: 2}
-  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: cf4742e600c4b4449a63e424228d4fc7, type: 2}
-  - m_RefCount: 20
+  - m_RefCount: 17
     m_Data: {fileID: 11400000, guid: 5eca702cf25a31645b94966a199c6eb6, type: 2}
-  - m_RefCount: 9
+  - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: 2905124913baec348ae29e7dad6834cc, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -2277,23 +2277,23 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1568418180, guid: fb90d60c62897b24081002a9da933233, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 1520721166, guid: fb90d60c62897b24081002a9da933233, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 314561296, guid: fb90d60c62897b24081002a9da933233, type: 3}
   - m_RefCount: 10
     m_Data: {fileID: 1598171139, guid: e276844408b361443b19a32e0432e961, type: 3}
-  - m_RefCount: 9
+  - m_RefCount: 7
     m_Data: {fileID: 1771826167, guid: 536cc436797192548b94438bb014ac54, type: 3}
+  - m_RefCount: 5
+    m_Data: {fileID: -1404182018, guid: fb90d60c62897b24081002a9da933233, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -945091786, guid: 536cc436797192548b94438bb014ac54, type: 3}
-  - m_RefCount: 3
     m_Data: {fileID: 626515871, guid: 536cc436797192548b94438bb014ac54, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 628086041, guid: 536cc436797192548b94438bb014ac54, type: 3}
-  - m_RefCount: 20
+  - m_RefCount: 17
     m_Data: {fileID: 1385113431, guid: 536cc436797192548b94438bb014ac54, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1129020766, guid: 536cc436797192548b94438bb014ac54, type: 3}
@@ -2374,7 +2374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775554273}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.04, z: -0.01}
+  m_LocalPosition: {x: 0, y: 0, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2919,6 +2919,10 @@ PrefabInstance:
       propertyPath: capsule
       value: 
       objectReference: {fileID: 7022062179269694354, guid: 6e2309b1b38cfaf438269e8e2a055ec2, type: 3}
+    - target: {fileID: 8430861059224472366, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
