@@ -60,7 +60,7 @@
 	<object class="MarkerTrack" id="{d44f4b33-84b3-447a-a26b-cb35bc3d7ce1}" />
 	<object class="GroupTrack" id="{8b891f02-b6d8-4312-b887-1d0d08e0852a}">
 		<relationship name="modules">
-			<destination>{41d05bcd-82f4-4462-9d9d-d5fd85be4a6b}</destination>
+			<destination>{e1b47537-d4ca-4bb8-ae07-f0825b8fb023}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{41f9f7c7-10cf-49f2-8a1b-66926cf2dac7}</destination>
@@ -68,7 +68,7 @@
 	</object>
 	<object class="Timeline" id="{f317f912-c35e-4991-8ccc-d8d8e4fc17dc}">
 		<relationship name="modules">
-			<destination>{41d05bcd-82f4-4462-9d9d-d5fd85be4a6b}</destination>
+			<destination>{e1b47537-d4ca-4bb8-ae07-f0825b8fb023}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{102835ca-75b2-4b00-ae6f-41685d1022c0}">
@@ -91,12 +91,18 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ffaeac7a-c81a-4762-b642-8152dc30f7d6}" />
-	<object class="SingleSound" id="{41d05bcd-82f4-4462-9d9d-d5fd85be4a6b}">
+	<object class="SingleSound" id="{e1b47537-d4ca-4bb8-ae07-f0825b8fb023}">
 		<property name="length">
-			<value>0.52244897959183678</value>
+			<value>0.83000000000000007</value>
 		</property>
+		<property name="timelockedOffset">
+			<value>0.60999999999999999</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{c1d1745a-6ca6-4f1e-842f-de8a33fea04e}</destination>
+		</relationship>
 		<relationship name="audioFile">
-			<destination>{e3ada16a-a5da-4ec4-b252-92996861b24f}</destination>
+			<destination>{f1bdf3cb-ee22-497a-bff6-3caa53b01816}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{41f9f7c7-10cf-49f2-8a1b-66926cf2dac7}">
@@ -120,6 +126,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{7fd1e246-3e24-495d-a486-a6f07f1dac7d}" />
 	<object class="MixerBusFader" id="{82311373-893f-4e32-973f-a30f29c42938}" />
+	<object class="RandomizerModulator" id="{c1d1745a-6ca6-4f1e-842f-de8a33fea04e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>startOffset</value>
+		</property>
+		<property name="amount">
+			<value>14</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{a4b79a3c-686c-4c6b-92d9-957df2782863}">
 		<relationship name="effects">
 			<destination>{e88a7d22-3e4a-4418-b1ca-d6904a034cff}</destination>
