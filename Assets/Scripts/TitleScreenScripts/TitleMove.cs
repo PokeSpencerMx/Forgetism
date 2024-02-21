@@ -10,7 +10,8 @@ public class TitleMove : MonoBehaviour
 
     void Start()
     {
-        titlePos.DOMove(endMove.position, 0.65f).SetEase(Ease.OutBounce);
+        //titlePos.DOMove(endMove.position, 0.65f).SetEase(Ease.OutBounce);
+        titlePos.DOMoveY(850, 2f);
     }
 
     void Update()
