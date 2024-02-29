@@ -133,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 54152744}
   - component: {fileID: 54152747}
-  - component: {fileID: 54152746}
   - component: {fileID: 54152745}
+  - component: {fileID: 54152748}
   m_Layer: 0
   m_Name: Portal 1
   m_TagString: Untagged
@@ -150,8 +150,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54152743}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9, y: -2.54, z: 0}
-  m_LocalScale: {x: 3.3652003, y: 3.126724, z: 0.8969763}
+  m_LocalPosition: {x: 1.98, y: -2.5268, z: 0}
+  m_LocalScale: {x: 3.4540415, y: 3.2092695, z: 0.92065644}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -202,19 +202,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.19463982, y: 0.20064637}
   m_EdgeRadius: 0
---- !u!114 &54152746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54152743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2b7d50be690c42cb803a6375a1dbf61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  portal: {fileID: 1236999598}
 --- !u!212 &54152747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -267,6 +254,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &54152748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54152743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ed4a2ddaca3403cb48d6b0a7fddf5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portal: {fileID: 1236999598}
 --- !u!1 &115701722
 GameObject:
   m_ObjectHideFlags: 0
@@ -3117,8 +3117,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1236999598}
   - component: {fileID: 1236999597}
-  - component: {fileID: 1236999596}
   - component: {fileID: 1236999595}
+  - component: {fileID: 1236999599}
   m_Layer: 0
   m_Name: Portal 2
   m_TagString: Untagged
@@ -3171,19 +3171,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18676195, y: 0.19413635}
   m_EdgeRadius: 0
---- !u!114 &1236999596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236999594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2b7d50be690c42cb803a6375a1dbf61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  portal: {fileID: 54152744}
 --- !u!212 &1236999597
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3244,13 +3231,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236999594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.936, y: -2.5, z: 0}
-  m_LocalScale: {x: 3.1662345, y: 3.3517385, z: 0.8969763}
+  m_LocalPosition: {x: -4, y: -2.5203, z: 0}
+  m_LocalScale: {x: 3.0462344, y: 3.2247076, z: 0.8629809}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1236999599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236999594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ed4a2ddaca3403cb48d6b0a7fddf5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portal: {fileID: 54152744}
 --- !u!1 &1395653363
 GameObject:
   m_ObjectHideFlags: 0

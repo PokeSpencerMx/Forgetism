@@ -7,7 +7,7 @@ public class Portal : MonoBehaviour
 
     private float portalTimer;
     private bool portalActive;
-    private float delay = 2f;
+    private float delay = 1.7f;
     public Transform portal;
     private GameObject gumDum;
 
