@@ -66,6 +66,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CompletedLevels/AnyPortInAStorm.unity
     guid: aa6ff2a6ad7fd0542b78b13fd4bd4a00
   - enabled: 1
+    path: Assets/Scenes/Unfinished Levels/ReturntoCenter.unity
+    guid: 0bc8d0178276f0343a97dc1cdc634663
+  - enabled: 1
     path: Assets/Scenes/Unfinished Levels/DisorderofOperations.unity
     guid: 9482705e1ee53af4d8ee644fd514d14e
   m_configObjects: {}

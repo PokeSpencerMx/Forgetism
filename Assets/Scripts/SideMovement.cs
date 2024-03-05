@@ -20,6 +20,7 @@ public class SideMovement : MonoBehaviour
     private bool isMove;
 
     public LayerMask Stop;
+    private bool waitForAni = false;
   
 
     private void Start()
@@ -48,6 +49,8 @@ public class SideMovement : MonoBehaviour
 
     private void Update()
     {
+        if(waitForAni)return;
+
         //sprite flipping
         if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
@@ -91,26 +94,33 @@ public class SideMovement : MonoBehaviour
                 }
                 if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
                     {
-                    // Debug.Log("Forgot how to move right");
-                    //Animation for forgetting right should go here.
-                    //animator.SetBool("thinking", false);
-                    //animator.SetBool("unmovable", true);
-                    //animator.SetBool("right", true);
+                        // Debug.Log("Forgot how to move right");
+                        //Animation for forgetting right should go here.
+                        //animator.SetBool("thinking", false);
+                        //animator.SetBool("unmovable", true);
+                        //animator.SetBool("right", true);
 
-                    gonnaLoseRight = true;
+                        gonnaLoseRight = true;
                         if (noRight == false)
                         {
-                            Instantiate(rightPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
-                            FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
-                           // animator.SetBool("unmovable", false);
-                           // animator.SetBool("right", false);
-                    }
+                                animator.SetBool("thinking", false);
+                                animator.Play("PullingOutPan(right)", 0, 0);
+                                // waitForAni = true;
+                                // if(waitForAni)return;
+                                Instantiate(rightPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
+                            // animator.SetBool("unmovable", false);
+                            // animator.SetBool("right", false);
+                            //    animator.Play("PullingOutPan(right)", -1, 0);
+                            
+                        }
                     }
             }
             else
             {
                 animator.SetBool("thinking", false);
             }
+            
             transform.position = Vector3.MoveTowards(transform.position, point.position, moveSpeed * Time.deltaTime);
 
             //movement
@@ -166,5 +176,10 @@ public class SideMovement : MonoBehaviour
     private void ForgotRight()
     {
         noRight = true;
+    }
+
+    public void AniComplete(){
+        Instantiate(rightPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
+        waitForAni = false;
     }
 }
