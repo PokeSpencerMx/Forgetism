@@ -37,6 +37,9 @@ public class Portal : MonoBehaviour
         gumDum.GetComponent<VerticalMovement>().ResetPosition();
         portalTimer = delay;
         portalActive = false;
+      //  if(gumDum.transform.position == portal.position){
+      //      portalActive = false;
+       // }
        // gumDum = null;
     }
 
@@ -46,7 +49,9 @@ public class Portal : MonoBehaviour
         {
             portalActive = true;
             gumDum = collision.gameObject;
+
         }
+        
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

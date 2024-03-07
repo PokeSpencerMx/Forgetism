@@ -2159,8 +2159,8 @@ GameObject:
   m_Component:
   - component: {fileID: 637801140}
   - component: {fileID: 637801142}
-  - component: {fileID: 637801141}
   - component: {fileID: 637801143}
+  - component: {fileID: 637801144}
   m_Layer: 0
   m_Name: Portal 1
   m_TagString: Untagged
@@ -2183,19 +2183,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &637801141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637801139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2b7d50be690c42cb803a6375a1dbf61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  portal: {fileID: 1693516264}
 --- !u!212 &637801142
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2293,6 +2280,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &637801144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637801139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b7d50be690c42cb803a6375a1dbf61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portal: {fileID: 1693516264}
 --- !u!1 &673017340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3347,8 +3347,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1693516264}
   - component: {fileID: 1693516263}
-  - component: {fileID: 1693516262}
   - component: {fileID: 1693516265}
+  - component: {fileID: 1693516266}
   m_Layer: 0
   m_Name: Portal 2
   m_TagString: Untagged
@@ -3356,19 +3356,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1693516262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693516261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2b7d50be690c42cb803a6375a1dbf61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  portal: {fileID: 637801140}
 --- !u!212 &1693516263
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3481,6 +3468,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &1693516266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693516261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2b7d50be690c42cb803a6375a1dbf61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portal: {fileID: 637801140}
 --- !u!1 &1809716293
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,8 +3491,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1809716295}
   - component: {fileID: 1809716294}
-  - component: {fileID: 1809716297}
   - component: {fileID: 1809716296}
+  - component: {fileID: 1809716297}
   m_Layer: 0
   m_Name: Portal 3
   m_TagString: Untagged
