@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CompletedLevels/LevelSelect.unity
     guid: b030e80a967734d4d96601651ee5bab9
   - enabled: 1
+    path: Assets/Scenes/CompletedLevels/World2_Level_Select.unity
+    guid: 570d87fa1cbb0455dab6c54cb0a1adee
+  - enabled: 1
     path: Assets/Scenes/CompletedLevels/VeryBasicPuzzle.unity
     guid: 524ffd4eb9fd59c4d88a27212ea78bca
   - enabled: 1
