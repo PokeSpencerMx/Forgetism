@@ -103,8 +103,8 @@ public class SideMovement : MonoBehaviour
                         gonnaLoseRight = true;
                         if (noRight == false)
                         {
-                                animator.SetBool("thinking", false);
-                                animator.Play("PullingOutPan(right)", 0, 0);
+                                // animator.SetBool("thinking", false);
+                                // animator.Play("PullingOutPan(right)", 0, 0);
                                 // waitForAni = true;
                                 // if(waitForAni)return;
                                 Instantiate(rightPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
