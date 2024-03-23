@@ -16,7 +16,12 @@ public class LevelChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Quitting the Level
+        if (Input.GetKeyDown(KeyCode.Q)) // If player hits the Q Key
+        {
+            //Loads the scene called nextLevelName, which is the level select screen of this world.
+            SceneManager.LoadScene(nextLevelName, LoadSceneMode.Single);
+        }
     }
 
     void OnTriggerStay2D(Collider2D col)
