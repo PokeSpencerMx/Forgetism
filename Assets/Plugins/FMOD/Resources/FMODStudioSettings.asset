@@ -512,6 +512,7 @@ MonoBehaviour:
   - Door
   - Drop
   - Error
+  - Music
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
