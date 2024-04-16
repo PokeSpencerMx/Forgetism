@@ -2360,6 +2360,7 @@ GameObject:
   - component: {fileID: 1549592206}
   - component: {fileID: 1549592208}
   - component: {fileID: 1549592207}
+  - component: {fileID: 1549592209}
   m_Layer: 5
   m_Name: UICenter
   m_TagString: Untagged
@@ -2429,6 +2430,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549592205}
   m_CullTransparentMesh: 1
+--- !u!114 &1549592209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549592205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8e4a170d7d18f4b861391204ad8dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upArr: {fileID: 2074864389}
+  downArr: {fileID: 896781969}
+  leftArr: {fileID: 383027511}
+  rightArr: {fileID: 1697360955}
 --- !u!1 &1602068359
 GameObject:
   m_ObjectHideFlags: 0
