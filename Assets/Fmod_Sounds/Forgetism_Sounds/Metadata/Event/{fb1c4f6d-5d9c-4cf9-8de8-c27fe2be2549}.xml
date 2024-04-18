@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{fb1c4f6d-5d9c-4cf9-8de8-c27fe2be2549}">
 		<property name="name">
-			<value>Level Select</value>
+			<value>Level_Select</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8139775260144694308}
   - component: {fileID: 6070181913384782911}
-  - component: {fileID: 4220271426011401471}
+  - component: {fileID: 6908600750078178745}
   m_Layer: 0
   m_Name: MusicBot
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6070181913384782911
 MonoBehaviour:
@@ -49,9 +49,11 @@ MonoBehaviour:
   UnloadEvent: 0
   Banks:
   - Music
+  - Drop
+  - Error
   CollisionTag: 
   PreloadSamples: 1
---- !u!114 &4220271426011401471
+--- !u!114 &6908600750078178745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,25 +62,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3169829695803088351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 98519876db2354d50b30d3408bbd490b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1323461914
-      Data2: 1279388692
-      Data3: -389039697
-      Data4: 1792496807
-    Path: event:/Music/Menu_music/Menu_Music
-  Event: 
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 1
-  Preload: 1
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  F2_Door: {fileID: 0}

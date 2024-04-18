@@ -5321,6 +5321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 368873764}
   - component: {fileID: 368873763}
+  - component: {fileID: 368873765}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5394,6 +5395,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &368873765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368873761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 6179807146345848435}
 --- !u!1 &475132505
 GameObject:
   m_ObjectHideFlags: 0
@@ -6248,18 +6262,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicBot
       objectReference: {fileID: 0}
-    - target: {fileID: 6070181913384782911, guid: 8467cc57afab84776a39b72fdfa497ae, type: 3}
-      propertyPath: Banks.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6070181913384782911, guid: 8467cc57afab84776a39b72fdfa497ae, type: 3}
-      propertyPath: Banks.Array.data[1]
-      value: Drop
-      objectReference: {fileID: 0}
-    - target: {fileID: 6070181913384782911, guid: 8467cc57afab84776a39b72fdfa497ae, type: 3}
-      propertyPath: Banks.Array.data[2]
-      value: Error
-      objectReference: {fileID: 0}
     - target: {fileID: 8139775260144694308, guid: 8467cc57afab84776a39b72fdfa497ae, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -6309,3 +6311,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8467cc57afab84776a39b72fdfa497ae, type: 3}
+--- !u!1 &6179807146345848435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3169829695803088351, guid: 8467cc57afab84776a39b72fdfa497ae, type: 3}
+  m_PrefabInstance: {fileID: 6179807146345848434}
+  m_PrefabAsset: {fileID: 0}

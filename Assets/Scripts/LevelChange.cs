@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class LevelChange : MonoBehaviour
 {
     public string nextLevelName;
-    
+    private static FMOD.Studio.EventInstance Music; //An event instance variable.
+    private static FMOD.Studio.EventInstance Music2;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +36,13 @@ public class LevelChange : MonoBehaviour
     {
         Debug.Log(nextLevelName);
         SceneManager.LoadScene(nextLevelName, LoadSceneMode.Single);
+    }
+    public void Music_Change()
+    {
+        Music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Menu_music/Menu_Music");
+        Music2 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Level_Music/Level_Select");
+        Music.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        Music2.start();
+
     }
 }
