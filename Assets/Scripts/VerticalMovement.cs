@@ -17,6 +17,7 @@ public class VerticalMovement : MonoBehaviour
     private bool isMove;
 
     Animator animator;
+    private SpriteRenderer sr;
     
     public LayerMask Stop;
   
@@ -31,6 +32,7 @@ public class VerticalMovement : MonoBehaviour
         noDown = false;
 
         animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
     }
     public bool IsMoving()
     {
@@ -90,11 +92,23 @@ public class VerticalMovement : MonoBehaviour
                 {
                     canMove = 0;
                     FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Error/Error");
+
+                    //Makes sure the sprite isn't flipped.
+                    sr.flipX = false;
+
+                    //Plays the animation of Gumdum shrugging and thinking of a crossed out down arrow
+                    animator.Play("ForgotDown");
                 }
                 else if (Input.GetAxisRaw("Vertical") > 0 && noUp)
                 {
                     canMove = 0;
                     FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Error/Error");
+
+                    //Makes sure the sprite isn't flipped.
+                    sr.flipX = false;
+
+                    //Plays the animation of Gumdum shrugging and thinking of a crossed out up arrow
+                    animator.Play("ForgotUp");
                 }
                 else
                 {

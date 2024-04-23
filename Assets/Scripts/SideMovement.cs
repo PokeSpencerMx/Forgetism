@@ -132,13 +132,23 @@ public class SideMovement : MonoBehaviour
                     {
                         canMove = 0;
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Error/Error");
-                        //animator.Play("ForgetLeft");
+                        
+                        //Makes sure the sprite isn't flipped.
+                        sr.flipX = false;
+
+                        //Plays the animation of Gumdum shrugging and thinking of a crossed out left arrow
+                        animator.Play("ForgotLeft");
                     }
                     else if (Input.GetAxisRaw("Horizontal") > 0 && noRight)
                     {
                         canMove = 0;
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Error/Error");
-                        //animator.Play("ForgetRight");
+
+                        //Makes sure the sprite isn't flipped.
+                        sr.flipX = false;
+
+                        //Plays the animation of Gumdum shrugging and thinking of a crossed out right arrow
+                        animator.Play("ForgotRight");
                     }
                     else
                     {
