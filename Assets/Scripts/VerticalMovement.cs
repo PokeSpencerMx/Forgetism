@@ -12,6 +12,8 @@ public class VerticalMovement : MonoBehaviour
     private bool noUp;
     private bool noDown;
 
+    private float startFrame = 0.35f;
+
     public GameObject upPrefab;
     public GameObject downPrefab;
     private bool isMove;
@@ -61,6 +63,12 @@ public class VerticalMovement : MonoBehaviour
                     gonnaLoseUp = true;
                     if (noUp == false)
                     {
+                        //Not Flipped
+                        sr.flipX = false;
+                        
+                        //Gumdum pan animation
+                        animator.Play("PullingOutPan(right)", -1, startFrame);
+                        
                         Instantiate(upPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, upPrefab.transform.position.z), transform.rotation);
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
                     }
@@ -74,6 +82,12 @@ public class VerticalMovement : MonoBehaviour
                     gonnaLoseDown = true;
                     if (noDown == false)
                     {
+                        //Not Flipped
+                        sr.flipX = false;
+                        
+                        //Gumdum pan animation
+                        animator.Play("PullingOutPan(right)", -1, startFrame);
+                        
                         Instantiate(downPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, downPrefab.transform.position.z), transform.rotation);
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
                     }
