@@ -42,7 +42,11 @@ public class ButtonActivation : MonoBehaviour
     public void OpenTheDoor()
     {
         // Debug.Log("Door is open");
-        doors_map.gameObject.SetActive(false);
+        if (doors_map != null)
+        {
+            doors_map.gameObject.SetActive(false);
+        }
+        
         
     }
 
