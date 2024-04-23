@@ -173,7 +173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6775608188059840646, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.93
+      value: 3.75
       objectReference: {fileID: 0}
     - target: {fileID: 6775608188059840646, guid: bc18b80e0ac9e07449215e148c03b444, type: 3}
       propertyPath: m_LocalPosition.z
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd6057cf28e9ca40b836c23e98f4f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doors_map: {fileID: 0}
+  doors_map: {fileID: 426469589}
 --- !u!58 &25370848
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2480,7 +2480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd6057cf28e9ca40b836c23e98f4f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doors_map: {fileID: 0}
+  doors_map: {fileID: 1802768836}
 --- !u!58 &991911637
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2720,7 +2720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1090810482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.992, y: -3.53, z: 0}
+  m_LocalPosition: {x: -3.992, y: -3.463, z: 0}
   m_LocalScale: {x: 2.687963, y: 2.687963, z: 2.687963}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3855,7 +3855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd6057cf28e9ca40b836c23e98f4f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doors_map: {fileID: 0}
+  doors_map: {fileID: 784566283}
 --- !u!58 &1844429275
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4095,7 +4095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098918926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.001, y: 2.521, z: 0}
+  m_LocalPosition: {x: 1.95, y: 2.48, z: 0}
   m_LocalScale: {x: 2.687963, y: 2.687963, z: 2.687963}
   m_ConstrainProportionsScale: 0
   m_Children: []
