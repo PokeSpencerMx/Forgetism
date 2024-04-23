@@ -12,6 +12,8 @@ public class SideMovement : MonoBehaviour
     private bool noLeft;
     private bool noRight;
 
+    private float startFrame = 0.35f;
+
     public GameObject leftPrefab;
     public GameObject rightPrefab;
 
@@ -84,6 +86,12 @@ public class SideMovement : MonoBehaviour
                     gonnaLoseLeft = true;
                     if (noLeft == false)
                     {
+                        //Not Flipped
+                        sr.flipX = false;
+                        
+                        //Gumdum pan animation
+                        animator.Play("PullingOutPan(right)", -1, startFrame);
+                        
                         Instantiate(leftPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, leftPrefab.transform.position.z), leftPrefab.transform.rotation);
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
                         //animator.SetBool("unmovable", false);
@@ -103,15 +111,16 @@ public class SideMovement : MonoBehaviour
                         gonnaLoseRight = true;
                         if (noRight == false)
                         {
-                                // animator.SetBool("thinking", false);
-                                // animator.Play("PullingOutPan(right)", 0, 0);
-                                // waitForAni = true;
-                                // if(waitForAni)return;
-                                Instantiate(rightPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
-                                FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
-                            // animator.SetBool("unmovable", false);
-                            // animator.SetBool("right", false);
-                            //    animator.Play("PullingOutPan(right)", -1, 0);
+                            //Flipped
+                            sr.flipX = true;
+
+                            //Gumdum pan animation
+                            animator.Play("PullingOutPan(right)", -1, startFrame);
+                            
+                            Instantiate(rightPrefab, new Vector3(transform.position.x - 0.1f, transform.position.y - 0.2f, rightPrefab.transform.position.z), rightPrefab.transform.rotation);
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Forgetism_Gumball_Drop/Gumball_Drop");
+                            
+                            
                             
                         }
                     }
