@@ -506,7 +506,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 27.95
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1666,6 +1666,7 @@ GameObject:
   - component: {fileID: 830173828}
   - component: {fileID: 830173827}
   - component: {fileID: 830173826}
+  - component: {fileID: 830173830}
   m_Layer: 5
   m_Name: APushInTheRightDirection
   m_TagString: Untagged
@@ -1801,6 +1802,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830173824}
   m_CullTransparentMesh: 1
+--- !u!114 &830173830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830173824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Progress
+  TriggerEvent: 2
+  Value: 2
 --- !u!1 &951850685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,7 +2038,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 65.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2179,6 +2196,7 @@ GameObject:
   - component: {fileID: 1062511563}
   - component: {fileID: 1062511565}
   - component: {fileID: 1062511564}
+  - component: {fileID: 1062511566}
   m_Layer: 5
   m_Name: Floor_1 (1)
   m_TagString: Untagged
@@ -2253,7 +2271,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 34
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2303,6 +2321,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062511562}
   m_CullTransparentMesh: 1
+--- !u!114 &1062511566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062511562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Progress
+  TriggerEvent: 1
+  Value: 0
 --- !u!1 &1090415023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,7 +2633,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 34
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

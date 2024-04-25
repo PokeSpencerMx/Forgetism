@@ -1575,6 +1575,16 @@ namespace FMOD.Studio
             return hasHandle() && FMOD_Studio_EventInstance_IsValid(this.handle);
         }
 
+        public void setParameterByName(string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Progress()
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
     }
 
@@ -1720,6 +1730,11 @@ namespace FMOD.Studio
         public bool isValid()
         {
             return hasHandle() && FMOD_Studio_Bus_IsValid(this.handle);
+        }
+
+        public static void stopAllEvents()
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
