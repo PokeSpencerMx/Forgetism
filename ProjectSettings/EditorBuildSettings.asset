@@ -80,4 +80,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Unfinished Levels/PortalLevelAgain.unity
     guid: 5a576d9caecee493ea1620e1a205cef7
+  - enabled: 1
+    path: Assets/Scenes/Unfinished Levels/ALittleToTheRight.unity
+    guid: 71c53f111c94fb94dab6b67a367265ff
   m_configObjects: {}
