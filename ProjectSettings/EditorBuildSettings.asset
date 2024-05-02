@@ -83,4 +83,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Unfinished Levels/ALittleToTheRight.unity
     guid: 71c53f111c94fb94dab6b67a367265ff
+  - enabled: 1
+    path: Assets/Scenes/Unfinished Levels/HintlessInSeattle.unity
+    guid: 2f9be8c15f5dd0a44b4ca9a8e601f47c
   m_configObjects: {}
